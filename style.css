@@ -1,0 +1,189 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #3b0202, #3b0202);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeInHeader 2s ease-out;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 50px;
+}
+
+@keyframes fadeInHeader {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styles */
+h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Unordered list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+li {
+    background-color: #f3e6d2;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+li h3 {
+    font-size: 1.8em;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #3b0202;
+    color: white;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #ecf0f1;
+}
+
+td:hover {
+    background-color: #d5dbdb;
+}
+
+/* Form Styles */
+form {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"], form textarea, form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="submit"] {
+    background-color: #3b0202;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #c0392b;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #c0392b;
+}
+.hidden {
+    display: none;
+}
+.footer-text {
+    color: white;
+}
+.site-footer {
+    background: linear-gradient(to right, #3b0202, #3b0202);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.site-footer .social-icons a img {
+    width: 26px;
+    margin: 0 10px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s;
+}
+
+.site-footer .social-icons a:hover img {
+    transform: scale(1.2);
+}
